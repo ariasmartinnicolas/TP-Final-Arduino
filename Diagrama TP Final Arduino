@@ -1,0 +1,159 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="NM1E7y7r8cMC1fWlonvP">
+    <mxGraphModel dx="2727" dy="1084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-26" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Inicio: Se enciende el arduino" vertex="1">
+          <mxGeometry height="70" width="240" x="100" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-24" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;ESTADO 1: INICIALIZACIÓN&amp;nbsp;&lt;br&gt;&amp;nbsp;- Se limpia la pantalla. Último puntaje = 0. (0 porque recien se prende el arduino).&lt;br&gt;&amp;nbsp;- Se ejecuta la secuencia de luces de bienvenida.&amp;nbsp;&lt;br&gt;- Se reproduce la melodía de inicio.&amp;nbsp; &amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="360" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-25" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ESTADO 2: GENERAR SECUENCIA (Nivel X)&amp;nbsp;&lt;br&gt;&amp;nbsp;- Pantalla muestra: &quot;Nivel X&quot;&amp;nbsp;&lt;br&gt;- El sistema genera un patrón aleatorio de segun el nivel&lt;br&gt;- Muestra el patrón (Prende LED + Tono por cada uno).&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="360" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-27" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="450" />
+            </Array>
+            <mxPoint x="170" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ESTADO 3: ESPERA DE JUGADOR&amp;nbsp;&lt;br&gt;&amp;nbsp;- El sistema espera que el usuario presione un botón.&amp;nbsp;&lt;br&gt;- Monitorea FLANCOS para detectar la pulsación exacta." vertex="1">
+          <mxGeometry height="70" width="360" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-31" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-7" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="COMPROBAR PROGRESO&amp;nbsp;&lt;div&gt;- Sumar 10 puntos por acierto.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Completo la secuencia de este nivel?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="360" x="70" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-29" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-8" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ESTADO 5: Game Over&amp;nbsp;&lt;div&gt;- Se enciende Led rojo.&lt;/div&gt;&lt;div&gt;- Melodia triste de fallo.&lt;/div&gt;&lt;div&gt;-Pantalla de &quot;Game Over&quot;.&lt;/div&gt;&lt;div&gt;- Pantalla muestra:&amp;nbsp;&lt;br&gt;&amp;nbsp;&quot;Ultimo Puntaje: XXX&quot; (Mantiene el puntaje ganado).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="250" x="490" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-39" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="690" />
+              <mxPoint x="760" y="125" />
+              <mxPoint x="400" y="125" />
+            </Array>
+            <mxPoint x="760" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-11" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="[Fin del juego /      &lt;br&gt;Vuelve a reiniciar]&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="555" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-55" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-12" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ESTADO 4: NIVEL GANADO&amp;nbsp;&lt;br&gt;&amp;nbsp;- Suma bono de puntos.&amp;nbsp;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="360" x="100" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-42" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="890" />
+              <mxPoint x="760" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-14" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="¡VICTORIA TOTAL!&amp;nbsp;&lt;br&gt;&amp;nbsp;- Pantalla: &quot;¡Usted Gano!&quot;&amp;nbsp;&lt;div&gt;&amp;nbsp;- Melodía especial de campeón.&lt;br&gt;- Muestra puntaje final.&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="120" x="690" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-17" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="No (Vuelve a espera del siguiente boton)&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-32" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-18" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="SÍ (Nivel Superado)" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="805" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-45" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="B7O9cHGHJKg8v2EVJLLK-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="1095" />
+              <mxPoint x="20" y="245" />
+            </Array>
+            <mxPoint x="260" y="1025" as="sourcePoint" />
+            <mxPoint x="20" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-22" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="- Sube de nivel (Ej: Nivel 2).&lt;br&gt;- Agrega +1 LED a la secuencia aleatoria." vertex="1">
+          <mxGeometry height="70" width="210" x="90" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-34" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="B7O9cHGHJKg8v2EVJLLK-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="1070" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="760" as="sourcePoint" />
+            <mxPoint x="220" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-50" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-52" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-46" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&amp;nbsp;¿Botón correcto?" vertex="1">
+          <mxGeometry height="80" width="180" x="160" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-53" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-48" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Si" vertex="1">
+          <mxGeometry height="35" width="56" x="222" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-51" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-49" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="No" vertex="1">
+          <mxGeometry height="40" width="56" x="434" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-59" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-61" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-54" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="¿Era el Nivel 10?&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="150" x="205" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-60" edge="1" parent="1" source="B7O9cHGHJKg8v2EVJLLK-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B7O9cHGHJKg8v2EVJLLK-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-57" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="NO (Aumenta Dificultad)" vertex="1">
+          <mxGeometry height="70" width="120" x="330" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="B7O9cHGHJKg8v2EVJLLK-58" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="SI" vertex="1">
+          <mxGeometry height="70" width="120" x="520" y="1060" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
